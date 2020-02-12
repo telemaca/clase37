@@ -6,6 +6,12 @@ const nombres = prompt("Ingrese varios nombres separados por espacios");
 
 const nombresArray = nombres.split(' ');
 
+let nombre = "";
+let message = "";
+
 for(let i=0; i<nombresArray.length; i++){
-    console.log(`Hola ${nombresArray[i]}`);
+    nombre = nombresArray[i]
+    message += `Hola, ${nombre}\n`
 }
+
+alert(message)

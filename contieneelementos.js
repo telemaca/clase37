@@ -8,14 +8,15 @@
 const numeros = prompt("Ingrese numeros separados por espacios");
 const numerosArray=numeros.split(' ');
 const valorExistente = Number(prompt("Ingrese el valor que desea averiguar si existe"));
-let estaEnLista = true;
+let faltaEnLista = true;
+
 for(let i=0; i<numerosArray.length; i++){
     if(valorExistente===Number(numerosArray[i])){
         alert(`El valor ${valorExistente} se encuentra entre los valores originales`);
-        estaEnLista=false;
+        faltaEnLista=false;
     }
 }
 
-if(estaEnLista){
+if(faltaEnLista){
     alert("El valor no existe");
 }
